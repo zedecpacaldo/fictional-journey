@@ -12,5 +12,5 @@ int main()
 
     printf("Fahrenheit Temperature is: %.2f.", f);
     printf("\nCelsius Temperature is: %.2f.", c);
-    return 0;
+    return 0
 }
