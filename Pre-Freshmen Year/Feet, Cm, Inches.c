@@ -17,4 +17,8 @@ int main()
     cm = (inch * 2.54);
 
     printf("\n%.2f inches = %.2f cm", inch, cm);
+    getch();
+    
+    return 0
+        
 }
