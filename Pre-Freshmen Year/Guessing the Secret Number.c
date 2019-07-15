@@ -5,7 +5,7 @@
 int main()
 {
 
-    int secretNumber = 5; //Change this to whatever you like.
+    int secretNumber = 5; /* Change this to whatever you like. */
     int guess;
     int tries = 0;
     int guessLimit = 3;
