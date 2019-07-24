@@ -1,8 +1,7 @@
 #include <stdio.h>
-#include <math.h>
 
 int main(){
-    int number, evaluator;
+    int number;
 
     printf("Input an integer: "); scanf("%d", &number);
     if(number % 15 == 0){
