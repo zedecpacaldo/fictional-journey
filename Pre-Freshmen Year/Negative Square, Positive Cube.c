@@ -1,8 +1,7 @@
 #include <stdio.h>
-#include <math.h>
 
 int main(){
-    int number, evaluator, negative;
+    int number, evaluator;
 
     printf("Enter an integer value: "); scanf("%d", &number);
 
