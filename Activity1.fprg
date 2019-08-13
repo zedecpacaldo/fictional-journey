@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Zedec"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-08-13 03:20:00 PM"/>
+        <attribute name="created" value="WmVkZWM7TEFQVE9QLUJLUkUxTUhHOzIwMTktMDgtMTM7MDI6NDQ6MjMgUE07Mjg0NA=="/>
+        <attribute name="edited" value="WmVkZWM7TEFQVE9QLUJLUkUxTUhHOzIwMTktMDgtMTM7MDM6MjA6MDAgUE07MzsyOTQ0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="dividend, divisor, quotient" type="Real" array="False" size=""/>
+            <output expression="&quot;Give me a number to divide: &quot;" newline="True"/>
+            <input variable="dividend"/>
+            <output expression="&quot;Give me a number to divide &quot;&amp;dividend&amp;&quot; .&quot;" newline="True"/>
+            <input variable="divisor"/>
+            <assign variable="quotient" expression="dividend/divisor"/>
+            <output expression="dividend&amp;&quot; divided by &quot;&amp;divisor&amp;&quot; is equal to &quot;&amp;quotient&amp;&quot;.&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
