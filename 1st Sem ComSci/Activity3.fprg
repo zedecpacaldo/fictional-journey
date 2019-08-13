@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Zedec"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-08-13 03:15:44 PM"/>
+        <attribute name="created" value="WmVkZWM7TEFQVE9QLUJLUkUxTUhHOzIwMTktMDgtMTM7MDM6MTA6NTUgUE07Mjg0Mw=="/>
+        <attribute name="edited" value="WmVkZWM7TEFQVE9QLUJLUkUxTUhHOzIwMTktMDgtMTM7MDM6MTU6NDQgUE07MTsyOTU0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="pesos, divider, quotient" type="Real" array="False" size=""/>
+            <assign variable="divider" expression="50"/>
+            <output expression="&quot;How much money (in pesos) are you willing to give? &quot;" newline="True"/>
+            <input variable="pesos"/>
+            <assign variable="quotient" expression="pesos/divider"/>
+            <output expression="&quot;With &quot;&amp;pesos&amp;&quot; pesos, it will yield $&quot;&amp;quotient&amp;&quot;.&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

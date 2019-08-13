@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Zedec"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-08-13 03:10:52 PM"/>
+        <attribute name="created" value="WmVkZWM7TEFQVE9QLUJLUkUxTUhHOzIwMTktMDgtMTM7MDI6NTc6MTEgUE07Mjg0NQ=="/>
+        <attribute name="edited" value="WmVkZWM7TEFQVE9QLUJLUkUxTUhHOzIwMTktMDgtMTM7MDM6MTA6NTIgUE07MTsyOTQ4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="denomA, denomB, numeA, numeB" type="Integer" array="False" size=""/>
+            <declare name="fraction1, fraction2, product" type="Real" array="False" size=""/>
+            <output expression="&quot;Enter Numerator A: &quot;" newline="True"/>
+            <input variable="numeA"/>
+            <output expression="&quot;Enter Denominator A: &quot;" newline="True"/>
+            <input variable="denomA"/>
+            <output expression="&quot;Enter Numerator B: &quot;" newline="True"/>
+            <input variable="numeB"/>
+            <output expression="&quot;Enter Denominator B: &quot;" newline="True"/>
+            <input variable="denomB"/>
+            <assign variable="fraction1" expression="numeA/denomA"/>
+            <assign variable="fraction2" expression="numeB/denomB"/>
+            <assign variable="product" expression="fraction1*fraction2"/>
+            <output expression="fraction1&amp;&quot; multiplied by &quot;&amp;fraction2&amp;&quot; is equal to &quot;&amp;product&amp;&quot; in decimal form.&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
