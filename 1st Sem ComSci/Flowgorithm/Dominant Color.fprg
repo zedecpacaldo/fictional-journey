@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Zedec"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-08-16 03:37:28 PM"/>
+        <attribute name="created" value="WmVkZWM7TEFQVE9QLUJLUkUxTUhHOzIwMTktMDgtMTY7MDI6NDM6NTkgUE07Mjg1NQ=="/>
+        <attribute name="edited" value="WmVkZWM7TEFQVE9QLUJLUkUxTUhHOzIwMTktMDgtMTY7MDM6Mzc6MjggUE07NDsyOTY2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="input, red, green, blue" type="Integer" array="False" size=""/>
+            <output expression="&quot;Input a color code: &quot;" newline="True"/>
+            <input variable="input"/>
+            <assign variable="red" expression="input/10000"/>
+            <assign variable="green" expression="((input%10000)/100)"/>
+            <assign variable="blue" expression="input%100"/>
+            <if expression="red &gt; blue &amp;&amp; red &gt; green">
+                <then>
+                    <output expression="&quot;Red is Dominant.&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="blue &gt; red &amp;&amp; blue &gt; green">
+                        <then>
+                            <output expression="&quot;Blue is Dominant&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="green&gt;red &amp;&amp; green&gt;blue">
+                                <then>
+                                    <output expression="&quot;Green is Dominant.&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

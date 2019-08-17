@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Zedec"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-08-16 02:43:57 PM"/>
+        <attribute name="created" value="WmVkZWM7TEFQVE9QLUJLUkUxTUhHOzIwMTktMDgtMTY7MDI6MzM6MDIgUE07Mjg0Mg=="/>
+        <attribute name="edited" value="WmVkZWM7TEFQVE9QLUJLUkUxTUhHOzIwMTktMDgtMTY7MDI6NDM6NTcgUE07MTsyOTYx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, remainder" type="Integer" array="False" size=""/>
+            <output expression="&quot;Input a number.&quot;" newline="True"/>
+            <input variable="n"/>
+            <assign variable="remainder" expression="n%2"/>
+            <if expression="remainder==0">
+                <then>
+                    <output expression="&quot;Even!&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Odd!&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

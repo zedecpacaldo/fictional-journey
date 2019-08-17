@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Zedec"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-08-16 03:12:09 PM"/>
+        <attribute name="created" value="WmVkZWM7TEFQVE9QLUJLUkUxTUhHOzIwMTktMDgtMTY7MDM6MDM6MjQgUE07Mjg0NA=="/>
+        <attribute name="edited" value="WmVkZWM7TEFQVE9QLUJLUkUxTUhHOzIwMTktMDgtMTY7MDM6MTI6MDkgUE07MTsyOTU1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="waterLevel" type="Real" array="False" size=""/>
+            <output expression="&quot;What is the Water Level in Meters?&quot;" newline="True"/>
+            <input variable="waterLevel"/>
+            <if expression="waterLevel &lt; 1 &amp;&amp; waterLevel &gt; 0">
+                <then>
+                    <output expression="&quot;Wear Rubber Boots.&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="waterLevel &lt; 3 &amp;&amp; waterLevel &gt; 0">
+                        <then>
+                            <output expression="&quot;Have the high ground.&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="waterLevel &lt;= 4 &amp;&amp; waterLevel &gt; 0">
+                                <then>
+                                    <output expression="&quot;Evacuate!&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="waterLevel &gt; 4 &amp;&amp; waterLevel &gt; 0">
+                                        <then>
+                                            <output expression="&quot;GG&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <output expression="&quot;Invalid Entry.&quot;" newline="True"/>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
