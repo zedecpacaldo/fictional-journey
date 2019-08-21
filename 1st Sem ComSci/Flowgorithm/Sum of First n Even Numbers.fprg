@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Zedec"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-08-20 03:13:55 PM"/>
+        <attribute name="created" value="WmVkZWM7TEFQVE9QLUJLUkUxTUhHOzIwMTktMDgtMjA7MDM6MDg6MzYgUE07Mjg0Nw=="/>
+        <attribute name="edited" value="WmVkZWM7TEFQVE9QLUJLUkUxTUhHOzIwMTktMDgtMjA7MDM6MTM6NTUgUE07MTsyOTUy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, i, sum, count" type="Integer" array="False" size=""/>
+            <assign variable="count" expression="0"/>
+            <assign variable="sum" expression="0"/>
+            <assign variable="i" expression="1"/>
+            <input variable="n"/>
+            <while expression="count != n">
+                <if expression="i%2 == 0">
+                    <then>
+                        <assign variable="sum" expression="sum + i"/>
+                        <assign variable="count" expression="count + 1"/>
+                    </then>
+                    <else/>
+                </if>
+                <assign variable="i" expression="i + 1"/>
+            </while>
+            <output expression="sum" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

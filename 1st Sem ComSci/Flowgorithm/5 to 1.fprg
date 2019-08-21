@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Zedec"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-08-20 06:48:04 PM"/>
+        <attribute name="created" value="WmVkZWM7TEFQVE9QLUJLUkUxTUhHOzIwMTktMDgtMjA7MDI6MzQ6MDkgUE07Mjg0NQ=="/>
+        <attribute name="edited" value="WmVkZWM7TEFQVE9QLUJLUkUxTUhHOzIwMTktMDgtMjA7MDY6NDg6MDQgUE07NDsyOTYw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <assign variable="i" expression="0"/>
+            <for variable="i" start="5" end="1" direction="dec" step="1">
+                <output expression="i" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
