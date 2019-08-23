@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Zedec"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-08-23 03:01:06 PM"/>
+        <attribute name="created" value="WmVkZWM7TEFQVE9QLUJLUkUxTUhHOzIwMTktMDgtMjM7MDI6NTU6MjMgUE07Mjg0Nw=="/>
+        <attribute name="edited" value="WmVkZWM7TEFQVE9QLUJLUkUxTUhHOzIwMTktMDgtMjM7MDM6MDE6MDYgUE07MTsyOTQ4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="x, y" type="Integer" array="False" size=""/>
+            <output expression="&quot;Input x: &quot;" newline="True"/>
+            <input variable="x"/>
+            <output expression="&quot;Input y: &quot;" newline="True"/>
+            <input variable="y"/>
+            <output expression="&quot;Is &quot;&amp;x&amp;&quot; divisible by &quot;&amp;y&amp;&quot;?&quot;" newline="True"/>
+            <if expression="x%y==0">
+                <then>
+                    <output expression="&quot;Yes.&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;No.&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

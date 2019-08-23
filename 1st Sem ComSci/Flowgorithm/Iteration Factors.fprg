@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Zedec"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-08-23 03:38:56 PM"/>
+        <attribute name="created" value="WmVkZWM7TEFQVE9QLUJLUkUxTUhHOzIwMTktMDgtMjM7MDM6MzU6MjIgUE07Mjg0NQ=="/>
+        <attribute name="edited" value="WmVkZWM7TEFQVE9QLUJLUkUxTUhHOzIwMTktMDgtMjM7MDM6Mzg6NTYgUE07MTsyOTYz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, m, n" type="Integer" array="False" size=""/>
+            <output expression="&quot;Input M: &quot;" newline="True"/>
+            <input variable="m"/>
+            <output expression="&quot;Input N: &quot;" newline="True"/>
+            <input variable="n"/>
+            <if expression="m &gt; n">
+                <then>
+                    <for variable="i" start="1" end="m" direction="inc" step="1">
+                        <if expression="m%i == 0 &amp;&amp; n%i == 0">
+                            <then>
+                                <output expression="i" newline="True"/>
+                            </then>
+                            <else/>
+                        </if>
+                    </for>
+                </then>
+                <else>
+                    <for variable="i" start="1" end="n" direction="inc" step="1">
+                        <if expression="m%i == 0 &amp;&amp; n%i == 0">
+                            <then>
+                                <output expression="i" newline="True"/>
+                            </then>
+                            <else/>
+                        </if>
+                    </for>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Zedec"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-08-23 03:23:57 PM"/>
+        <attribute name="created" value="WmVkZWM7TEFQVE9QLUJLUkUxTUhHOzIwMTktMDgtMjM7MDM6MDE6MDkgUE07Mjg0Mw=="/>
+        <attribute name="edited" value="WmVkZWM7TEFQVE9QLUJLUkUxTUhHOzIwMTktMDgtMjM7MDM6MjM6NTcgUE07MjsyOTU5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="m, n, i" type="Integer" array="False" size=""/>
+            <input variable="m"/>
+            <input variable="n"/>
+            <if expression="m%2==0">
+                <then>
+                    <for variable="m" start="m" end="n" direction="inc" step="2">
+                        <output expression="m" newline="True"/>
+                    </for>
+                </then>
+                <else>
+                    <assign variable="m" expression="m+1"/>
+                    <for variable="m" start="m" end="n" direction="inc" step="2">
+                        <output expression="m" newline="True"/>
+                    </for>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

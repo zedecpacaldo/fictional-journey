@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Zedec"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-08-23 03:42:41 PM"/>
+        <attribute name="created" value="WmVkZWM7TEFQVE9QLUJLUkUxTUhHOzIwMTktMDgtMjM7MDM6MjQ6NTcgUE07Mjg1MQ=="/>
+        <attribute name="edited" value="WmVkZWM7TEFQVE9QLUJLUkUxTUhHOzIwMTktMDgtMjM7MDM6NDI6NDEgUE07MjsyOTUz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, x" type="Integer" array="False" size=""/>
+            <output expression="&quot;Input Number: &quot;" newline="True"/>
+            <input variable="x"/>
+            <output expression="x&amp;&quot; is divisible by: &quot;" newline="True"/>
+            <for variable="i" start="1" end="x" direction="inc" step="1">
+                <if expression="x%i==0">
+                    <then>
+                        <output expression="i" newline="True"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
