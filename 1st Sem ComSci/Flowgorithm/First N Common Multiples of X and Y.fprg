@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Zedec"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-08-27 03:53:29 PM"/>
+        <attribute name="created" value="WmVkZWM7TEFQVE9QLUJLUkUxTUhHOzIwMTktMDgtMjc7MDM6Mzc6NDYgUE07Mjg1Nw=="/>
+        <attribute name="edited" value="WmVkZWM7TEFQVE9QLUJLUkUxTUhHOzIwMTktMDgtMjc7MDM6NTM6MjkgUE07MTsyOTY0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="count, max, i, x, y, n" type="Integer" array="False" size=""/>
+            <assign variable="i" expression="2"/>
+            <output expression="&quot;Input X:&quot;" newline="True"/>
+            <input variable="x"/>
+            <output expression="&quot;Input Y: &quot;" newline="True"/>
+            <input variable="y"/>
+            <output expression="&quot;Input Nth Multiple of X and Y: &quot;" newline="True"/>
+            <input variable="n"/>
+            <if expression="x &gt; y">
+                <then>
+                    <assign variable="max" expression="x"/>
+                </then>
+                <else>
+                    <assign variable="max" expression="y"/>
+                </else>
+            </if>
+            <assign variable="count" expression="0"/>
+            <while expression="count &lt; n">
+                <if expression="max%x==0 &amp;&amp; max%y==0">
+                    <then>
+                        <assign variable="count" expression="count+1"/>
+                        <output expression="max" newline="True"/>
+                    </then>
+                    <else/>
+                </if>
+                <if expression="x &gt; y">
+                    <then>
+                        <assign variable="max" expression="x*i"/>
+                    </then>
+                    <else>
+                        <assign variable="max" expression="y*i"/>
+                    </else>
+                </if>
+                <assign variable="i" expression="i+1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
