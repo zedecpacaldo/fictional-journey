@@ -1,26 +1,30 @@
 #include <stdio.h>
 
 void main(){
-    char word[100], reverse[100];
-    int palindrome = 1, count = 0;
+    int n, reversed = 0, m, palindrome = 1;
 
-    scanf("%s", &word);
+    scanf("%d", &n);
+    m = n;
 
-    for(int i = 0; word[i] != '\0'; i++){
-        count++;
+    while(m > 0){
+        reversed = reversed + (m%10);
+        reversed = reversed * 10;
+        m = m/10;
     }
 
-    int j = 0;
-
-    for(int i = count-1; i >= 0; i--){
-        reverse[j] = word[i];
-        j++;
-    }
-
-    for(int i = 0; word[i] != '\0'; i++){
-        if(word[i] != reverse[i]){
+    reversed = reversed/10;
+    
+    while(n > 0){
+        if(n%10 != reversed%10){
             palindrome = 0;
         }
+        n = n/10;
+        reversed = reversed/10;
     }
-    printf("%d", palindrome);
+
+    if(palindrome == 1){
+        printf("Yessur");
+    } else {
+        printf("Nomam");
+    }
 }
